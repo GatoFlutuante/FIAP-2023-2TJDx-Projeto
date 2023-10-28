@@ -9,8 +9,8 @@ import java.io.Serializable
 data class User(
     @PrimaryKey val id: Int,
     @ColumnInfo(name= "active") val active: Int,
-    @ColumnInfo(name = "username") val username: String,
-    @ColumnInfo(name= "password") val password: String,
+    @ColumnInfo(name = "username") var username: String,
+    @ColumnInfo(name= "password") var password: String,
     @ColumnInfo(name= "type") val type: String?,
 ): Serializable
 

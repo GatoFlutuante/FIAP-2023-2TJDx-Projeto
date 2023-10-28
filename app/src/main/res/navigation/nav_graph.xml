@@ -92,10 +92,11 @@
     <fragment
         android:id="@+id/cadastroUsuarioFragment"
         android:name="br.com.fiap.edu.xboxone.usuarios.CadastroUsuarioFragment"
-        android:label="CadastroUsuarioFragment" >
+        tools:layout="@layout/fragment_edituser"
+        android:label="CadastroUsuarioFragment">
         <argument
             android:name="usuario"
-            app:nullable="true"
-            app:argType="string" />
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 </navigation>
